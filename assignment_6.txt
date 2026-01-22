@@ -1,0 +1,45 @@
+1 What is user defined function in python?Why do we need fnction instead of writing code repeatedlly?
+Answer: A static set of insrtuction which can be used repeatedly can be converted into a functions .Since such functions are created by user they are called as user defined functions.
+Createing a function for a set of instruction which is getting used repeatedly help to increate the maintenibility of program,
+it is easy to read.
+
+2. Explain the synatx of function definition using the def keyword.Why is the : mandatory?
+Answer: 
+def <functionname>(<parameters optional>):
+    <body>
+    return optional
+with semicolumn python understands that the function body is starting.
+
+3. Why is the importance of indentation inside the function body?what happens if indentation is incorrect?
+Answer: Indentationinside function body helps python to understand what is the function body and its scope.If the indentation is incorrect
+the function may abort abruptly and may misunderstood teh scope of variables of the function.
+
+4.Differentiate between calling a function and defining a funtion with simple explanation
+Answer: lets take an example,
+def add(n1,n2):
+    total = 0
+    total = n1+n2
+    return total
+def main():
+    result = add(10,20)
+    print(result)
+ Here line #19 is defining a function where a user defined function is created with its parameters to be passed,values to be returened
+ Where as in line #24 user is calling that function to perform addtion of given number.
+
+5: Can a python function exists without statement?if yes   how?
+Answer: ideally no,python does not alllow empty function and throws error but such functions can be written by adding pass statement in it.
+
+6. what is the role of pass statement in a function definition?
+Answer: Python does not allow empty function so user can define the function name and add pass statement in it to avoid syntax error
+
+7. what is the diff between parameters and arguments in python functions?
+Answer: variable defined in a function is called as parameters and values passed to the function during its calling is called as argument
+
+8. What happens if the number of arguments passed does not match with the function parameter?
+Answer:It will throw an error.
+
+9.What is a return value in a function?
+Answer: output send back to the caller is called as return.
+
+10. Can a python function return multiple values?if yes, how does python handles it internally?
+Answer: Yes python can send multiple return values.It uses tuple to same the values internally.
