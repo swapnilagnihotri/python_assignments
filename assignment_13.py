@@ -30,14 +30,22 @@ def checkPerfectNum(no1):
     
 def getBinary(no):
     binlist = []
-    for i in range(no):
-        print(i)
-        binlist.append(no % 2)
+    str1=""
+    while (no>0):
+        str1=str1+str(no % 2)
         no = no // 2
-      
-    print(binlist)
+        
+    print("Binary equivalent is:",str1)
 
-
+def displayResult(marks):
+    if(marks >= 75):
+        print("Distiction")
+    elif (marks >= 60 and marks <75):
+        print("First Class")
+    elif (marks >=50 and marks <60 ):
+        print("Second class")
+    elif (marks < 50 ):
+        print("Fail")
 
 
 def main():
@@ -55,6 +63,9 @@ def main():
     print("Enter the number to find its binary equivalent:")
     num2 = int(input())
     getBinary(num2)
+    print("Enter the marks to find teh result:")
+    marks = int(input())
+    displayResult(marks)
 
 
 
